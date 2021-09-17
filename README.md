@@ -1,1 +1,1 @@
-# https://github.com/Staspol216/StreamLayot/
+# https://Staspol216/github.io/StreamLayot/
