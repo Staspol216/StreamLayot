@@ -20,6 +20,8 @@
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -45,12 +47,16 @@
   .wrapper {
       min-height: 100%;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
   }
 /*--------------------------------------------------------------------*/
   ._container {
       max-width: 1046px;
       margin: 0px auto;
-/*--------------------------------------------------------------------*/
+      padding: 0px 15px;
+      box-sizing: content-box;
+/*-------------ШАПКА-------------------------------------------------------*/
   }
   .header {
     position: absolute;
@@ -60,25 +66,70 @@
     z-index: 50;
   }
   .header__container {
-
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+  }
+  @media (max-width: 463px) {
+    .header__container {
+      min-height: 85px;
+    }
   }
   .header__logo {
-
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
   }
   .header__menu {
-
+    margin: 0px 0px 0px 133px;
+  }
+  @media (max-width: 992px) {
+    .header__menu {
+      margin: 0px 0px 0px 80px;
+    }
+  }
+  @media (max-width: 768px) {
+    .header__menu {
+      margin: 0px 0px 0px 40px;
+    }
+  }
+  @media (max-width: 463px) {
+    .header__menu {
+      margin: 0px 0px 0px 20px;
+    }
   }
   .menu {
-
+    padding: 5px 0px;
   }
+
   .menu__list {
-
+    display: flex;
+    flex-wrap: wrap;
   }
+
   .menu__item {
 
   }
 
-  .menu_link {
-
+  .menu__item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
   }
 
+  .menu__link {
+    color: #737373;
+    line-height: 171%;
+    font-weight: 500;
+  }
+  @media (max-width: 463px) {
+    .menu__link {
+      font-size: 18px;
+    }
+  }
+/*-------------PAGE-------------------------------------------------------*/
+.page {
+  flex: 1 1 auto;
+}
+/*-------------ПОДВАЛ-------------------------------------------------------*/
+.footer {
+
+}
