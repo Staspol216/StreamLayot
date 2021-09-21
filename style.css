@@ -56,8 +56,19 @@
       margin: 0px auto;
       padding: 0px 15px;
       box-sizing: content-box;
-/*-------------ШАПКА-------------------------------------------------------*/
   }
+  ._ibg {
+    position: relative;
+  }
+  ._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+/*-------------ШАПКА-------------------------------------------------------*/
   .header {
     position: absolute;
     width: 100%;
@@ -129,7 +140,70 @@
 .page {
   flex: 1 1 auto;
 }
+.page__main-block {
+}
 /*-------------ПОДВАЛ-------------------------------------------------------*/
 .footer {
 
+}
+/*-------------MAINBLOCK-------------------------------------------------------*/
+.main-block {
+  position: relative;
+}
+.main-block__container {
+}
+._container {
+}
+.main-block__body {
+  padding: 184px 0px 191px 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+
+.main-block__title {
+  font-size: 58px;
+  line-height: 137%;
+  font-weight: 800;
+  max-width: 509px;
+  letter-spacing: 0.2px;
+}
+.main-block__text {
+  font-size: 20px;
+  color: #737373;
+  line-height: 150%;
+
+}
+.main-block__buttons {
+  display: inline-flex;
+}
+.main-block__button {
+  padding: 10px 36px;
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.main-block__button_orange {
+  background: #FF7B47;
+  color: #fff;
+}
+
+.main-block__button_border {
+  color: #0D5C63;
+  border: 1px solid #0D5C63;
+}
+.main-block__image {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
