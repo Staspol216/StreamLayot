@@ -149,9 +149,15 @@
   z-index: 2;
   position: relative;
 }
-/*-------------HEADER-BLOCK-------------------------------------------------------*/
-.page__advantages {
+.page__practice {
+
 }
+
+.page__advantages {
+  
+}
+/*-------------HEADER-BLOCK-------------------------------------------------------*/
+
 .header-block {
   text-align: center;
   position: relative;
@@ -389,6 +395,7 @@
   }
 
   .advantages__container {
+    
   }
   .advantages__header {
     margin-bottom: 50px;
@@ -444,6 +451,34 @@
     font-size: 16px;
     line-height: 150%;
   }
+  /*-----------------------PRACTICE-------------------------*/
+  .practice {
+  }
+  .practice__container {
+  }
+  .practice__header {
+    padding-bottom: 45px;
+  }
+  .practice__body {
+    display: flex;
+  }
+  .practice__column {
+    flex: 0 1 25%;
+  }
+  .practice__items {
+  }
+  .item-practice {
+    background-color: #fff;
+  }
+  .item-practice__title {
+    padding: 30px 67px 15px 30px;
+  }
+  .item-practice__text {
+    padding: 0px 42px 30px 30px;
+  }
+  .item-practice__img {
+  }
+  
 
   
   
