@@ -165,6 +165,11 @@
 }
 
 .page__subscribe {
+
+}
+
+.page__contacts {
+
 }
 /*-------------HEADER-BLOCK-------------------------------------------------------*/
 
@@ -598,6 +603,7 @@
     .who__body {
       flex-direction: column;
       align-items: stretch;
+      padding-bottom: 50px;
     }
     .who__video {
       padding: 0px 0px 56.25% 0px;
@@ -622,11 +628,6 @@
   .clients {
     padding: 58px 0px;
   }
-  @media (max-width: 767px) {
-    .clients {
-      padding: 30px 0px;
-    }
-  }
   .clients__container {
   }
   .clients__items {
@@ -643,7 +644,17 @@
   .clients__item img {
     max-width: 100%;
   }
-
+  @media (max-width: 767px) {
+    .clients {
+      padding: 30px 0px;
+    }
+  }
+  @media (max-width: 330px) {
+    .clients__item {
+      padding: 10px 0px;
+    }
+  }
+/*--------------------SUBSCRIBE---------------------*/
   .subscribe {
     position: relative;
     padding:0px 0px 20px 0px;
@@ -666,11 +677,6 @@
     z-index: 2;
     background-color: #17213C;
   }
-  @media (min-width: 1070px) {
-    .subscribe__body {
-    margin: 0px 32px;
-    }
-  }
   .subscribe__content {
     padding: 30px 40px 30px 50px;
     border-radius: 2px;
@@ -687,6 +693,34 @@
     flex: 0 1 50%;
     display: flex;
     align-items: center;
+  }
+  .subscribe__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 58px;
+    padding: 0px 22px;
+    border-radius: 5px 0px 0px 5px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    color: #737373;
+    border-right: 0;
+  }
+  .subscribe__input:focus {
+    color: #000;
+  }
+  .subscribe__button {
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    min-height: 58px;
+    color: #fff;
+    padding: 0px 22px;
+  }
+
+  @media (min-width: 1070px) {
+    .subscribe__body {
+    margin: 0px 32px;
+    }
   }
   @media (min-width: 810px) {
     .subscribe__title { 
@@ -710,29 +744,84 @@
       padding: 20px 15px;
     }
   }
-  .subscribe__input {
-    width: 100%;
-    flex: 1 1 auto;
-    min-height: 58px;
-    padding: 0px 22px;
-    border-radius: 5px 0px 0px 5px;
-    background: #F9F9F9;
-    border: 1px solid #E6E6E6;
-    color: #737373;
-    border-right: 0;
-  }
-  .subscribe__input:focus {
-    color: #000;
-  }
-  .subscribe__button {
-    background: #FF7B47;
-    border: 1px solid #E6E6E6;
-    border-radius: 0px 5px 5px 0px;
-    min-height: 58px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    padding: 0px 22px;
+  /*--------------------CONTACTS-------------------*/
+  .contacts__container {
 
   }
-  
+  .contacts {
+
+  }
+  .contacts__header {
+    margin: 80px 93px;
+  }
+  .contact__body {
+    display: flex;
+    margin: 0px 32.5px 80px 32.5px;
+    align-items: center;
+  }
+  .contact__column {
+    flex: 1 1 33.333%;
+    background-color: #fff;
+  }
+  .item-contact {
+    text-align: center;
+    padding: 0px 15px;
+  }
+  .item-contact__icon {
+    padding: 50px 0px 15px 0px;
+  }
+  .item-contact__mail a {
+    color: #252B42;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 170%;
+    letter-spacing: 0.2px;
+  }
+  .item-contact__link a {
+    display: block;
+    padding: 15px 0px;
+    color: #252B42;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+  .contact-button {
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    color: #FF7B47;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .item-contact_dark {
+    background-color: #252B42;
+  }
+  .item-contact_dark >* a {
+    color: #fff;
+  }
+  .contact-button_dark {
+  background-color: #252B42;;
+  color: #fff;
+  border: 1px solid #fff;
+}
+  @media (max-width: 860px) {
+    .contact__body {
+      flex-wrap: wrap;
+    }
+  }
+  @media (min-width: 860px) {
+    .item-contact_dark {
+      height: 393px;
+    }
+  }
+  @media (max-width: 560px) {
+    .contacts__header {
+      margin: 30px 15px;
+    }
+  }
