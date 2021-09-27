@@ -979,21 +979,21 @@
     margin: 0px 0px 10px 0px;
   }
   .contacts-footer__item_phone {
-  background: url("/img/footer/1.svg") left no-repeat;
+  background: url("img/footer/1.svg") left no-repeat;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
   }
   .contacts-footer__item_map {
-  background: url("/img/footer/2.svg") left no-repeat;
+  background: url("img/footer/2.svg") left no-repeat;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
   }
   .contacts-footer__item_email {
-  background: url("/img/footer/3.svg") left no-repeat;
+  background: url("img/footer/3.svg") left no-repeat;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
